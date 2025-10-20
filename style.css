@@ -17,11 +17,11 @@ p {
 sub{
   font-size:medium;
   }
-/*
+
 a{
   color:#ededea;
   }
-*/
+
 
 /*button class:*/
 .button {
@@ -51,8 +51,8 @@ a{
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: inset 0 0 200px #000;
-  }
+  box-shadow: inset 0 0 200px #000000;
+}
 /*box*/
 #box{
   background-color: #2d2d2a;
@@ -62,4 +62,10 @@ a{
   cursor: pointer;
   border-radius:3px;
   border: solid #ededea;
+}
+
+@media screen and (max-width: 600px) {
+  #box{
+    margin:2px 2px;
   }
+}
