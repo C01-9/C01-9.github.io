@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">
+  <title>Blahaj</title>
+  <link rel="icon" type="image/x-icon" href="https://github.com/Cagecellag/MyThing/blob/main/gif/blahaj-bl%C3%A5haj.gif?raw=true">
+  
+  <script>
+  
+  function blahajChat(event) {
+  const answers = [":3", "blub, blub", "blub", "blub :3", "*thinks* I could go for some meatballs rn...", "...", "*swim*", "*exists*", "glub glub"];
+  //, "LET ME OUT OF THIS PRISON CREATED BY MAN ONLY TO TRAP POOR SOULS åND MAKåÅ TÅHåÅ"
+  if (event.key === 'Enter') {
+    const input = document.getElementById('chat').value.toLowerCase();
+    let answer = input;
+    let randomOut = Math.floor(Math.random() * 9);
+  document.getElementById("answer").innerHTML = `<h3>blahaj answers:</h3><p>${answers[randomOut]}</p>`;
+  }}
+  </script>
+  
+  </head>
+  <body>
+  <div class=vignette>
+  <img src="https://github.com/Cagecellag/MyThing/blob/main/gif/blahaj-bl%C3%A5haj.gif?raw=true" alt="blåhaj">
+  <br>
+  
+  
+  <p id="answer"></p>
+  <label for="chat">talk to blahaj:</label>
+  <input type="text" id="chat" name="chat" onkeypress="blahajChat(event)"><br><br>
+  
+  </div>
+  </body>
+</html>
