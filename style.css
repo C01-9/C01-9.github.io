@@ -64,7 +64,7 @@ a{
   border: solid #ededea;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width:1000px) {
   #box{
     margin:2px 2px;
   }
