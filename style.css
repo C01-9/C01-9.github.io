@@ -7,7 +7,7 @@ body {
   text-align: center;
 }
 h1 {
-  font-family: Verdana;
+  font-family: boba-mono;
 }
 p {
   font-size: x-large;
@@ -69,6 +69,11 @@ a{
   #box{
     margin:2px 2px;
   }
+}
+
+@font-face {
+  font-family: boba-mono;
+  src: url(boba-mono.otf);
 }
 
 .grid-container {
