@@ -53,6 +53,7 @@ a{
   width: 100%;
   height: 100%;
   box-shadow: inset 0 0 200px #000000;
+  overflow-y: scroll;
 }
 /*box*/
 #box{
