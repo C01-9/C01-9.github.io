@@ -1,6 +1,6 @@
 @font-face {
   font-family: boba-mono;
-  src: url(/src/font/boba-mono.otf);
+  src: url(src/font/boba-mono.otf);
 }
 body {
   /*background-color: #2d2d2a;*/
@@ -23,6 +23,16 @@ sub {
 }
 a {
   color: #ededea;
+}
+
+.vignette{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 200px #000000;
+  overflow-y: scroll;
 }
 
 /*button class:*/
