@@ -1,8 +1,8 @@
 body {
   /*background-color: #2d2d2a;*/
-  background-image: url('pics/bg.png');
+  background-image: url('src/pics/bg.png');
   background-attachment: fixed; 
-  color: #ededea;
+  color: #ededed;
   font-family: Monospace;
   text-align: center;
 }
@@ -19,14 +19,14 @@ sub {
 }
 
 a {
-  color: #ededea;
+  color: #ededed;
 }
 
 
 /*button class:*/
 .button {
-  background-color: #ededea;
-  color: #2d2d2a;
+  background-color: #ededed;
+  color: #2d2d2d;
   padding: 7px 16px;
   text-align: center;
   text-decoration: none;
@@ -39,9 +39,9 @@ a {
   transition-duration: 0.2s;
 }
 .button:hover {
-  border: 3px solid #ededea;
-  color: #ededea;
-  background: #2d2d2a;
+  border: 3px solid #ededed;
+  color: #ededed;
+  background: #2d2d2d;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.19), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -57,13 +57,13 @@ a {
 }
 /*box*/
 #box{
-  background-color: #2d2d2a;
+  background-color: #2d2d2d;
   padding: 7px 16px;
   display: inline-block;
   margin: 2px 45px;
   cursor: pointer;
   border-radius:3px;
-  border: solid #ededea;
+  border: solid #ededed;
 }
 
 @media (max-width:1000px) {
