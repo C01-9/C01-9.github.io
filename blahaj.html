@@ -14,8 +14,12 @@
     const input = document.getElementById('chat').value.toLowerCase();
     let answer = input;
     let randomOut = Math.floor(Math.random() * 9);
-  document.getElementById("answer").innerHTML = `<h3>blahaj answers:</h3><p>${answers[randomOut]}</p>`;
+    if (answer !== '') {
+      document.getElementById("answer").innerHTML = `<h3>blahaj answers:</h3><p>${answers[randomOut]}</p>`;
+      document.getElementById('chat').value = '';
+  }
   }}
+
   </script>
   
   </head>
