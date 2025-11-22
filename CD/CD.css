@@ -123,12 +123,13 @@ a {
   display: none;
 }
 
-#lightbox img {
+#lightbox p {
   max-width: 90%;
   max-height: 90%;
   border: 2px solid white;
   border-radius: 8px;
   box-shadow: 0 0 100px 30px #000000;
+  background-color: #2d2d2d;
 }
 
 #lightbox-close {
