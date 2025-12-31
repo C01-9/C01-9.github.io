@@ -60,13 +60,23 @@ a {
 /*vignette*/
 .grid-container {
   display: grid;
+  
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   width: 99%;
 
-  /*max width: 100%*/
   max-width: 1900px;
   padding: 10px;
+}
+
+.flex-container {
+  display:flex;
+  /*min-height: 800px; */
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .grid-box {
