@@ -65,11 +65,8 @@ a {
   gap: 20px;
   width: 99%;
 
-  max-width: 1900px;
   padding: 10px;
 }
-
-
 
 .grid-box {
   background: #2d2d2d;
@@ -79,6 +76,8 @@ a {
   text-align: center;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
+  width: auto;
+  min-height: 100px;
 }
 
 .grid-box:hover {
@@ -101,38 +100,35 @@ a {
 }
 
 .flex-container {
-  display:flex;
-  /*min-height: 800px; */
-  gap: 20px;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+  gap: 20px;
 }
 
 .flex-box {
-
   display:flex;
 
   background: #2d2d2d;
-  border: 2px solid #ededed;
-  border-radius: 10px;
+  border: none;
+  border-radius: 2px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   transition: transform 0.2s ease;
-  flex:1;
+  flex-shrink:1;
   
   gap: 20px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  
+  flex: 1 1 calc(45% - 5px); /* Two items per row with gap */
+  max-width: calc(45% - 5px);
+  box-sizing: border-box;
+  
+  width: auto;
+  min-height: 100px;
 }
 
 .flex-box img {
-  min-width: 200px;
-  width: 100%;
   height: auto;
-  border-radius: 8px;
-  object-fit: cover;
+  object-fit: cover; /* Ensures images scale properly */
 }
 
 .flex-box p {
