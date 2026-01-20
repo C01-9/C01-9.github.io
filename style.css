@@ -33,10 +33,11 @@ a {
   display: inline-block;
   font-size: 24px;
   font-family: Verdana;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 3px;
   transition-duration: 0.2s;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .button:hover {
   border: 3px solid #ededed;
