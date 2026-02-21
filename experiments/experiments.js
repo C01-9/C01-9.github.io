@@ -1,6 +1,9 @@
-//var snd = new Audio("file.wav");
+var audio = document.getElementById("myAudio"); 
 
-function playsound(event) {
-    var meow = new Audio("src/sudio/mario_paint_cat_meow.mp3");
-    meow.play();
-}
+function playsound() { 
+  audio.play(); 
+} 
+
+function pausesound() { 
+  audio.pause(); 
+} 
