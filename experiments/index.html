@@ -2,22 +2,13 @@
 <html>
 <head>
   <link rel="stylesheet" href="experiments.css">
-  <script>
-  var audio = document.getElementById("myAudio"); 
-
-function playsound() { 
-    audio.play(); 
-} 
-
-function pausesound() { 
-  audio.pause(); 
-} </script>
+  <script src="experiments.js"></script>
   <title>C01_9-T3sTinG</title>
   <link rel="icon" type="image/x-icon" href="/src/pics/C01_9logo.png">
 </head>
 <body>
 
-    <audio id="myAudio">
+    <audio controls id="myAudio">
         <source src="/src/audio/mario_paint_cat_meow.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
@@ -30,9 +21,9 @@ function pausesound() {
       <p>just trying stuff out over here. a some of this stuff might end up on other parts of the site.</p>
     </div>
 
-    <a href="art/index.html" class="button" style="font-size:15px;" onclick="playsound()" type="button">mewo</a>
+    <a href="art/index.html" class="button" style="font-size:15px;" onclick="playsound(event)" type="button">mewo</a>
 
-    <button onclick="playsound()" type="button">aaaaa</button>
+    <button onclick="playsound(event)" type="button">aaaaa</button>
 
   </div>
 </body>
