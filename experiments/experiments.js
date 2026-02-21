@@ -1,4 +1,4 @@
-var audio = new Audio('https://www.dingusland.fun/s/Double-Click-Loading-g375.mp3');
+var audio = new Audio('/../src/audio/mario_paint_cat_meow.mp3');
 
 function playsound(event) { 
     audio.play(event); 
