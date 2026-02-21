@@ -1,4 +1,4 @@
-var audio = document.getElementById("myAudio"); 
+var audio = new Audio('https://www.dingusland.fun/s/Double-Click-Loading-g375.mp3');
 
 function playsound(event) { 
     audio.play(); 
