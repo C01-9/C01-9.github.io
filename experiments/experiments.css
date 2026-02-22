@@ -1,6 +1,6 @@
 body {
   /*background-color: #2d2d2a;*/
-  background-image: url('src/pics/bg.png');
+  background-image: url('/../src/pics/bg.png');
   background-attachment: fixed; 
   color: #ededed;
   font-family: Monospace;
