@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  <link rel="stylesheet" href="style.css">
-  <title>Blahaj</title>
-  <link rel="icon" type="image/x-icon" href="https://github.com/Cagecellag/MyThing/blob/main/gif/blahaj-bl%C3%A5haj.gif?raw=true">
-  
-  <script>
-  
+
   function blahajChat(event) {
   const answers = [":3", "blub, blub", "blub", "blub :3", "*thinks* I could go for some meatballs rn...", "...", "*swim*", "*exists*", "glub glub"];
   //, "LET ME OUT OF THIS PRISON CREATED BY MAN ONLY TO TRAP POOR SOULS åND MAKåÅ TÅHåÅ"
@@ -20,20 +12,18 @@
   }
   }}
 
-  </script>
-  
-  </head>
-  <body>
-  <div class=vignette>
-  <img src="https://github.com/Cagecellag/MyThing/blob/main/gif/blahaj-bl%C3%A5haj.gif?raw=true" alt="blåhaj">
-  <br>
-  
-  <div id="box">
-  <p id="answer"></p>
-  <label for="chat">talk to blahaj:</label>
-  <input type="text" id="chat" name="chat" onkeypress="blahajChat(event)"><br><br>
-  </div>
-  
-  </div>
-  </body>
-</html>
+   function playsound(event, soundUrl) { 
+    event.preventDefault(); // Prevent the default link action
+
+    var audio = new Audio(soundUrl);
+
+    var link = event.target.getAttribute('href'); // Get the link's href
+    
+    audio.currentTime = 0;
+
+    audio.play(); 
+
+    audio.onended = function () {
+        window.location.href = link; // Navigate after the sound ends   
+      };
+} 
