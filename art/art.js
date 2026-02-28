@@ -65,7 +65,7 @@ function detectMob() {
     });
 }
 
-
+//shitty attempt at muting sound on moile
 
 
  function playsound(event, soundUrl) { 
