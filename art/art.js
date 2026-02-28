@@ -9,9 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".grid-box img").forEach((img) => {
     img.addEventListener("click", () => {
 
+      if (!(detectMob())) {
       audio3.play().catch((error) => {
         console.error("Audio playback failed:", error);
-      });
+      });}
 
       lightboxImg.src = img.src;
       lightbox.classList.remove("hidden");
@@ -20,9 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Close lightbox when the close button is clicked
   closeBtn.addEventListener("click", () => {
+    if (!(detectMob())) {
     audio1.play().catch((error) => {
         console.error("Audio playback failed:", error);
-      });
+      });}
 
     lightbox.classList.add("hidden");
     lightboxImg.src = "";
@@ -31,9 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Close lightbox when clicking outside the image
   lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) {
+      if (!(detectMob())) {
       audio1.play().catch((error) => {
         console.error("Audio playback failed:", error);
-      });
+      });}
 
       lightbox.classList.add("hidden");
       lightboxImg.src = "";
