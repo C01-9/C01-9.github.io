@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".grid-box img").forEach((img) => {
     img.addEventListener("click", () => {
 
-      if (!(detectMob())) {
+      if (detectMob()) {
       audio3.play().catch((error) => {
         console.error("Audio playback failed:", error);
       });}
@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Close lightbox when the close button is clicked
   closeBtn.addEventListener("click", () => {
-    if (!(detectMob())) {
+
+    if (detectMob()) {
     audio1.play().catch((error) => {
         console.error("Audio playback failed:", error);
       });}
@@ -33,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Close lightbox when clicking outside the image
   lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox) {
-      if (!(detectMob())) {
+      if (detectMob()) {
       audio1.play().catch((error) => {
         console.error("Audio playback failed:", error);
       });}
