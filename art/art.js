@@ -73,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
  function playsound(event, soundUrl) { 
+  if (!(detectMob())) {
     event.preventDefault(); // Prevent the default link action
 
     var audio = new Audio(soundUrl);
@@ -86,4 +87,4 @@ document.addEventListener("DOMContentLoaded", () => {
     audio.onended = function () {
         window.location.href = link; // Navigate after the sound ends   
       };
-}
+}}
