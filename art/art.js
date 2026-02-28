@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Posted by Michael Zaporozhets, modified by community. See post 'Timeline' for change history
 // Retrieved 2026-02-28, License - CC BY-SA 4.0
 
-  function detectMob() {
+function detectMob() {
     const toMatch = [
         /Android/i,
         /webOS/i,
@@ -63,14 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 
 
-  if (detectMob()) {
-    // Disable all audio playback for mobile users
-    const audios = document.querySelectorAll("audio");
-    audios.forEach(audio => {
-      audio.muted = true;
-    });
-  }
-});
+
 
  function playsound(event, soundUrl) { 
   if (!(detectMob())) {
@@ -88,3 +81,5 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = link; // Navigate after the sound ends   
       };
 }}
+
+});
