@@ -39,6 +39,17 @@ document.addEventListener("DOMContentLoaded", () => {
       lightboxImg.src = "";
     }
   });
+
+  // Check if the user is on a mobile device
+  const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+
+  if (isMobile) {
+    // Disable all audio playback for mobile users
+    const audios = document.querySelectorAll("audio");
+    audios.forEach(audio => {
+      audio.muted = true;
+    });
+  }
 });
 
  function playsound(event, soundUrl) { 
@@ -55,4 +66,4 @@ document.addEventListener("DOMContentLoaded", () => {
     audio.onended = function () {
         window.location.href = link; // Navigate after the sound ends   
       };
-} 
+}
