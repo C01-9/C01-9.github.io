@@ -41,9 +41,29 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Check if the user is on a mobile device
-  const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 
-  if (isMobile) {
+  // Source - https://stackoverflow.com/a/11381730
+// Posted by Michael Zaporozhets, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-02-28, License - CC BY-SA 4.0
+
+  function detectMob() {
+    const toMatch = [
+        /Android/i,
+        /webOS/i,
+        /iPhone/i,
+        /iPad/i,
+        /iPod/i,
+        /BlackBerry/i,
+        /Windows Phone/i
+    ];
+    
+    return toMatch.some((toMatchItem) => {
+        return navigator.userAgent.match(toMatchItem);
+    });
+}
+
+
+  if (detectMob()) {
     // Disable all audio playback for mobile users
     const audios = document.querySelectorAll("audio");
     audios.forEach(audio => {
