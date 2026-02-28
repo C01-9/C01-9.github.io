@@ -69,7 +69,7 @@ function detectMob() {
 
 
  function playsound(event, soundUrl) { 
-  if (!(detectMob())) {
+  if (detectMob()) {
     event.preventDefault(); // Prevent the default link action
 
     var audio = new Audio(soundUrl);
