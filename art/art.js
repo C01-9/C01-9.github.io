@@ -5,6 +5,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const audio1 = new Audio("/src/audio/JSRFsprays/spray1.mp3");
   const audio3 = new Audio("/src/audio/JSRFsprays/spray3.mp3");
 
+  // Check if the user is on a mobile device
+
+  // Source - https://stackoverflow.com/a/11381730
+// Posted by Michael Zaporozhets, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-02-28, License - CC BY-SA 4.0
+
+function detectMob() {
+    const toMatch = [
+        /Android/i,
+        /webOS/i,
+        /iPhone/i,
+        /iPad/i,
+        /iPod/i,
+        /BlackBerry/i,
+        /* /Windows Phone/i */
+    ];
+    
+    return toMatch.some((toMatchItem) => {
+        return navigator.userAgent.match(toMatchItem);
+    });
+}
+
   // Add click event to all images
   document.querySelectorAll(".grid-box img").forEach((img) => {
     img.addEventListener("click", () => {
@@ -44,33 +66,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Check if the user is on a mobile device
 
-  // Source - https://stackoverflow.com/a/11381730
-// Posted by Michael Zaporozhets, modified by community. See post 'Timeline' for change history
-// Retrieved 2026-02-28, License - CC BY-SA 4.0
-
-function detectMob() {
-    const toMatch = [
-        /Android/i,
-        /webOS/i,
-        /iPhone/i,
-        /iPad/i,
-        /iPod/i,
-        /BlackBerry/i,
-        /* /Windows Phone/i */
-    ];
-    
-    return toMatch.some((toMatchItem) => {
-        return navigator.userAgent.match(toMatchItem);
-    });
-}
 
 //shitty attempt at muting sound on moile
 
 
  function playsound(event, soundUrl) { 
-  if (detectMob()) {
+  if (!(detectMob())) {
     event.preventDefault(); // Prevent the default link action
 
     var audio = new Audio(soundUrl);
