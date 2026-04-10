@@ -25,25 +25,22 @@ a {
 
 /*button class:*/
 .button {
-  background-color: #ededed;
-  color: #2d2d2d;
-  padding: 7px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 24px;
-  font-family: Verdana;
-  cursor: pointer;
-  border-radius: 3px;
+  font-family: Monospace;
+  color: #ededed;
   transition-duration: 0.2s;
-  margin-left: 40px;
-  margin-right: 40px;
+  
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .button:hover {
-  border: 3px solid #ededed;
-  color: #ededed;
-  background: #2d2d2d;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.19), 0 17px 50px 0 rgba(0,0,0,0.19);
+  text-shadow: 0px 0px 5px #2d2d2a;
+}
+.button:hover::before{
+  content: '>';
+}
+.button:hover::after{
+  content: '<';
 }
 
 /*vignette*/
