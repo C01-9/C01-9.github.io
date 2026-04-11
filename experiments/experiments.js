@@ -25,3 +25,10 @@
 var link = $(this).attr('href'); // Get the link's href
 
 clickSound.play(); */
+
+
+// Setting a cookie
+document.cookie = "username=larry; path=/; max-age=3600";
+
+// Reading cookies
+const cookies = document.cookie.split(';');
